@@ -102,7 +102,7 @@ hystrix:
 info:
   关于我们: http://etstvs.net
 
-paascloud:
+etstvs:
   auth:
     jwt:
       expiredRemainMinutes: 20
