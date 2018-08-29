@@ -13,13 +13,13 @@ spring:
     proxy-target-class: true
     auto: true
   rabbitmq:
-    host: paascloud-mq-rabbit
+    host: etstvs-mq-rabbit
     port: 5672
     username: guest
     password: guest
   redis:
-    host: paascloud-db-redis
-    password: paascloud@redis
+    host: etstvs-db-redis
+    password: etstvs@redis
     port: 6379
     timeout: 0
   datasource:
@@ -40,7 +40,7 @@ spring:
         login-password: admin
   mail:
     host: smtp.163.com
-    username: paascloudTest@163.com
+    username: etstvs@163.com
     password: a123456
     port: 465
     protocol: smtp
@@ -100,9 +100,7 @@ hystrix:
             timeoutInMilliseconds: 20000
 
 info:
-  软件著作权: paascloud快速搭建企业级分布式微服务平台
-  著作登记号: 2018SR320076
-  关于我们: http://paascloud.net
+  关于我们: http://etstvs.net
 
 paascloud:
   auth:
@@ -114,9 +112,9 @@ paascloud:
       accessKeyId: 'your aliyun accessKeyId'
       accessKeySecret: 'your aliyun accessKeySecret'
     rocketMq:
-      namesrvAddr: paascloud-mq-rocket:9876
+      namesrvAddr: etstvs-mq-rocket:9876
     sms:
-      signName: 快乐学习网
+      signName: test
       regionId: cn-beijing
       endpoint:
       endpointName: cn-beijing
@@ -131,9 +129,9 @@ paascloud:
       publicHost: 'your qiniu oss public host'
   alipay:
     callback:
-      url: http://dev-api.paascloud.net/omc/pay/alipayCallback
+      url: http://dev-api.etstvs.net/omc/pay/alipayCallback
     qrCode:
       pcPath: /data/file/qrCode/alipay
       qiniuPath: alipay/QRCode/
   zk:
-    zkAddressList: paascloud-provider-zk:2181
+    zkAddressList: etstvs-provider-zk:2181
