@@ -41,7 +41,7 @@ security:
       id: paascloud-resource-uac
       filter-order: 3
 
-paascloud:
+etstvs:
   enableSqlLogInterceptor: false
   aliyun:
     rocketMq:
